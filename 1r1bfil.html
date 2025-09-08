@@ -38,25 +38,63 @@
       transition: all 0.3s ease;
     }
 
-    /* 1. Kerek gomb */
-    .btn-round {
-      background-color: #0066cc;
+    /* 1. Kör alakú gomb */
+    .btn-circle {
+      background-color: #009999;
       color: white;
       border: none;
-      border-radius: 50px;
-      width: 200px;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      font-size: 24px;
+      line-height: 80px;
+      text-align: center;
     }
 
-    /* 2. Négyzetes gomb */
-    .btn-square {
-      background-color: #cc3300;
-      color: white;
+    /* 2. Animált pulzáló gomb */
+    .btn-animated {
+      background: linear-gradient(45deg, #ffcc00, #ff6600);
+      color: #222;
       border: none;
-      border-radius: 0;
-      width: 200px;
+      border-radius: 10px;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
     }
 
-    /* 3. Árnyékos lebegő gomb */
+    /* 3. Kézírásos stílusú gomb */
+    .btn-handwritten {
+      background-color: #fdf6e3;
+      color: #5c3a21;
+      font-family: 'Brush Script MT', cursive;
+      font-size: 26px;
+      border: 1px solid #c2a679;
+      border-radius: 8px;
+      padding: 14px 28px;
+    }
+
+    /* 4. Gomb képpel (ikonos) */
+    .btn-image {
+      background-color: #fff;
+      color: #000;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      justify-content: center;
+    }
+    .btn-icon-img {
+      width: 24px;
+      height: 24px;
+      border-radius: 4px;
+    }
+
+    /* 5. Lebegő árnyékos gomb */
     .btn-float {
       background-color: #333;
       color: #fff;
@@ -69,7 +107,35 @@
       transform: translateY(-4px);
     }
 
-    /* 4. Keretes gomb ikonhelyzettel */
+    /* 6. Pergamen stílusú gomb */
+    .btn-parchment {
+      background-color: #f5f0e6;
+      color: #663300;
+      font-family: 'Garamond', serif;
+      border: 1px solid #996633;
+      box-shadow: inset 0 0 6px #ccc;
+      border-radius: 4px;
+    }
+
+    /* 7. Vékony elegáns gomb */
+    .btn-thin {
+      background-color: transparent;
+      color: #444;
+      border: 1px solid #aaa;
+      font-style: italic;
+      border-radius: 2px;
+    }
+
+    /* 8. Négyzetes gomb */
+    .btn-square {
+      background-color: #cc3300;
+      color: white;
+      border: none;
+      border-radius: 0;
+      width: 200px;
+    }
+
+    /* 9. Ikonos gomb (horgony) */
     .btn-icon {
       background-color: transparent;
       color: #0033cc;
@@ -87,62 +153,7 @@
       transform: translateY(-50%);
     }
 
-    /* 5. Animált háttérgomb */
-    .btn-animated {
-      background: linear-gradient(45deg, #ffcc00, #ff6600);
-      color: #222;
-      border: none;
-      border-radius: 10px;
-      animation: pulse 2s infinite;
-    }
-
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.05); }
-      100% { transform: scale(1); }
-    }
-
-    /* 6. Pergamen gomb */
-    .btn-parchment {
-      background-color: #f5f0e6;
-      color: #663300;
-      font-family: 'Garamond', serif;
-      border: 1px solid #996633;
-      box-shadow: inset 0 0 6px #ccc;
-      border-radius: 4px;
-    }
-
-    /* 7. Vékony elegáns */
-    .btn-thin {
-      background-color: transparent;
-      color: #444;
-      border: 1px solid #aaa;
-      font-style: italic;
-      border-radius: 2px;
-    }
-
-    /* 8. Kör alakú gomb */
-    .btn-circle {
-      background-color: #009999;
-      color: white;
-      border: none;
-      border-radius: 50%;
-      width: 80px;
-      height: 80px;
-      font-size: 24px;
-      line-height: 80px;
-    }
-
-    /* 9. Gomb szöveg aláhúzva */
-    .btn-underline {
-      background-color: #fff;
-      color: #000;
-      border: none;
-      text-decoration: underline;
-      font-weight: bold;
-    }
-
-    /* 10. Sötét fémes */
+    /* 10. Fémes hatású gomb */
     .btn-metal {
       background-color: #222;
       color: #ccc;
@@ -157,15 +168,18 @@
   <h1>VASMACSKA — Gombformák</h1>
 
   <div class="button-gallery">
-    <button class="btn-round">Kerek gomb</button>
-    <button class="btn-square">Négyzetes gomb</button>
+    <button class="btn-circle">⚔</button>
+    <button class="btn-animated">Hullámzó parancs</button>
+    <button class="btn-handwritten">Kézzel írt parancs</button>
+    <button class="btn-image">
+      <img src="1r1apic.png" alt="ikon" class="btn-icon-img">
+      Térkép megnyitása
+    </button>
     <button class="btn-float">Lebegő árnyékos</button>
-    <button class="btn-icon">Ikonos gomb</button>
-    <button class="btn-animated">Animált háttér</button>
     <button class="btn-parchment">Pergamen stílus</button>
     <button class="btn-thin">Vékony elegáns</button>
-    <button class="btn-circle">⚔</button>
-    <button class="btn-underline">Aláhúzott szöveg</button>
+    <button class="btn-square">Négyzetes gomb</button>
+    <button class="btn-icon">Horgony parancs</button>
     <button class="btn-metal">Fémes hatás</button>
   </div>
 
