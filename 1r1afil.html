@@ -5,27 +5,26 @@
   <title>Bevezető</title>
   <style>
     html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: Georgia, serif;
-      color: #f0f0f0;
-      overflow: hidden;
-    }
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-y: auto; /* engedi a görgetést */
+  font-family: Garamond, serif;
+}
 
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: url('1r1apic.png');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      z-index: -1;
-    }
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('1r1apic.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
 
     .content {
       position: relative;
