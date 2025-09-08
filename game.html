@@ -2,31 +2,50 @@
 <html lang="hu">
 <head>
   <meta charset="UTF-8">
-  <title>Horgony – Kezdőlap</title>
+  <title>Vasmacska – Indulás</title>
   <style>
     body {
-      background-color: #121212;
-      color: #f0f0f0;
       font-family: Georgia, serif;
-      padding: 40px;
+      color: #222;
+      margin: 0;
+      padding: 60px 20px;
       text-align: center;
     }
-    h2 {
-      font-size: 28px;
-      margin-bottom: 20px;
+
+    .story {
+      font-size: 20px;
+      line-height: 1.8;
+      max-width: 700px;
+      margin: 0 auto 60px auto;
     }
-    p {
-      font-size: 18px;
-      line-height: 1.6;
-      max-width: 600px;
-      margin: auto;
+
+    button {
+      font-size: 22px;
+      padding: 16px 32px;
+      background-color: #444;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #666;
     }
   </style>
 </head>
 <body>
-  <h2>Üdvözlünk a játékban: Horgony</h2>
-  <p>
-    Horgony egy magyar nyelvű böngészős RPG, ahol Thomas Maynard, száműzött brit kapitányként próbálja visszaszerezni becsületét.
-  </p>
+
+  <div class="story">
+    A Brit Birodalom hatalma a tengeren épül, de a Karib térség sötét vizein nem a király parancsa uralkodik, hanem a kalózok kardja.  
+    Az anyaország kikötőjében a hajnal ködében egy fregatt halkan ring a hullámokon.  
+    A fedélzetén tengerészek készülnek az indulásra. Nem tudják, hogy mi vár rájuk a világ túlsó felén.  
+    Az út hosszú, 7 hét az Atlanti-óceánon.  
+    Sokan remélték, hogy zsákmányból vagy prémiumból pénzhez juthatnak.  
+    A parancs világos: „Védjétek meg a gyarmatokat. Semmisítsétek meg a kalózokat. Hozzátok haza a birodalom dicsőségét.”
+  </div>
+
+  <button onclick="location.href='hnaplo.html'">Hajónapló</button>
+
 </body>
 </html>
