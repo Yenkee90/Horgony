@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Horgony</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #f0f0f0;
+      font-family: Georgia, serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+    h1 {
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+    button {
+      font-size: 20px;
+      padding: 14px 28px;
+      background-color: #444;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #666;
+    }
+    p {
+      margin-top: 30px;
+      font-size: 16px;
+      max-width: 500px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Horgony</h1>
+  <button onclick="openGame()">Játék megnyitása új lapon</button>
+  <p>Horgony – Egy történet a becsület visszaszerzéséről, a múlt terhéről, és a tenger igazságáról.</p>
+
+  <script>
+    function openGame() {
+      window.open("game.html", "_blank");
+    }
+  </script>
+</body>
+</html>
