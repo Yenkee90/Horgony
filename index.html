@@ -5,8 +5,8 @@
   <title>Vasmacska</title>
   <style>
     body {
-      color: #222;
       font-family: Georgia, serif;
+      color: #222;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -16,11 +16,13 @@
       padding-top: 100px;
       text-align: center;
     }
+
     h1 {
-      font-size: 65px; /* még nagyobb cím */
+      font-size: 64px;
       letter-spacing: 1px;
       margin-bottom: 40px;
     }
+
     button {
       font-size: 24px;
       padding: 18px 36px;
@@ -30,25 +32,36 @@
       border-radius: 6px;
       cursor: pointer;
     }
+
     button:hover {
       background-color: #666;
     }
-    p {
+
+    ul {
+      list-style-type: disc;
+      padding-left: 0;
       margin-top: 30px;
       font-size: 20px;
-      max-width: 600px;
       line-height: 1.7;
+      max-width: 600px;
+      text-align: left;
+    }
+
+    ul li {
+      margin-bottom: 10px;
     }
   </style>
 </head>
 <body>
   <h1>VASMACSKA</h1>
   <button onclick="openGame()">Játék megnyitása új lapon</button>
-  <p>
-  Egy magyar nyelvű, szövegközpontú RPG, ahol minden döntés számít.  
-  A történet a böngésződben kel életre. Grafikamentes, de hangulatban gazdag.  
-  Teljesen interaktív élmény, ahol a sorsod a választásaidon múlik.
-  </p>
+
+  <ul>
+    <li>Magyar nyelvű, szövegközpontú RPG</li>
+    <li>Döntésalapú játékmenet, minden választás számít</li>
+    <li>Grafikamentes, de hangulatban gazdag</li>
+    <li>Böngészőben fut, tele interaktív jelenetekkel</li>
+  </ul>
 
   <script>
     function openGame() {
