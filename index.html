@@ -31,24 +31,17 @@
       border: none;
       border-radius: 6px;
       cursor: pointer;
+      margin-bottom: 40px;
     }
 
     button:hover {
       background-color: #666;
     }
 
-    ul {
-      list-style-type: disc;
-      padding-left: 0;
-      margin-top: 30px;
+    .info-line {
       font-size: 20px;
-      line-height: 1.7;
-      max-width: 600px;
-      text-align: left;
-    }
-
-    ul li {
-      margin-bottom: 10px;
+      line-height: 1.8;
+      margin-bottom: 6px;
     }
   </style>
 </head>
@@ -56,12 +49,14 @@
   <h1>VASMACSKA</h1>
   <button onclick="openGame()">Játék megnyitása új lapon</button>
 
-  <ul>
-    <li>Magyar nyelvű, szövegközpontú RPG</li>
-    <li>Döntésalapú játékmenet, minden választás számít</li>
-    <li>Grafikamentes, de hangulatban gazdag</li>
-    <li>Böngészőben fut, tele interaktív jelenetekkel</li>
-  </ul>
+  <div class="info-line">Sorsod a választásaidon múlik.</div>
+  <div class="info-line">Döntésalapú játékmenet.</div>
+  <div class="info-line">Hangulatban gazdag.</div>
+  <div class="info-line">Interaktív jelenetek.</div>
+  <div class="info-line">Szövegközpontú.</div>
+  <div class="info-line">Böngészőben fut.</div>
+  <div class="info-line">Grafikamentes.</div>
+  <div class="info-line">Magyar nyelvű.</div>
 
   <script>
     function openGame() {
